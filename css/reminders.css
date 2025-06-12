@@ -53,8 +53,9 @@ category: navigation
 label: Reduced Motion
 
 note: |
-  1. Immediately jump any animation to the end point
-  2. Remove transitions & fixed background attachment
+  1. Immediately jump any transition to the end point.
+     *Note* be careful with blanket turning off any and all motion.
+  2. Remove smooth scrolling & fixed background attachment.
 
 links:
   - https://github.com/mozdevs/cssremedy/issues/11
@@ -63,9 +64,6 @@ category: accessibility
 */
 /* @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {
-    animation-delay: -1ms !important;
-    animation-duration: 1ms !important;
-    animation-iteration-count: 1 !important;
     background-attachment: initial !important;
     scroll-behavior: auto !important;
     transition-delay: 0s !important;
